@@ -9,6 +9,45 @@ different colors to every 3 rows. -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Table with Pseudo-Classes and Pseudo-Elements</title>
+        <style>
+            thead tr:nth-child(1) {
+                background-color: #f18054e2;
+            }
+            tbody tr:nth-child(1), tbody tr:nth-child(2), tbody tr:nth-child(3) {
+                background-color: #92ea83;
+            }
+            tbody tr:nth-child(5), tbody tr:nth-child(6), tbody tr:nth-child(7) {
+                background-color: #97c4e1;
+            }
+            tbody tr:nth-child(9), tbody tr:nth-child(10), tbody tr:nth-child(11) {
+                background-color: #de90b8;
+            }
+            tbody tr:nth-child(4),tbody tr:nth-child(8) {
+
+                height: 15px;
+                width: 100%;
+                
+            }
+            table {
+                border-collapse: collapse;
+                border-spacing: 0;
+                width: 100%;
+            }
+
+            tbody tr:nth-child(1):hover {
+                background-color: #1ae103e2;
+                color : #fff;
+            }
+
+            tbody tr:nth-child(2):active{
+                background-color: #f71e26e2;
+                color : #fff;
+            }
+             tbody tr:nth-child(3) input:focus {
+                background-color: #142ce9e2;
+                color : #dc5252;
+            }
+        </style>
     </head>
     <body>
         <table border="1">
@@ -36,14 +75,12 @@ different colors to every 3 rows. -->
                 <tr>
                     <td> 3</td>
                     <td> :focus</td>
-                    <td> Input focus</td>
+                    <td> <input type="text" placeholder="Input focus"> </input> </td>
                     <td> Done</td>
                 </tr>
                 <tr>
-                    <td>  </td>
-                    <td>  </td>
-                    <td>  </td>
-                    <td>  </td>
+                    <td colspan="4"></td>
+                   
                 </tr>
                 <tr>
                     <td> 4</td>
@@ -64,10 +101,7 @@ different colors to every 3 rows. -->
                     <td> Done</td>
                 </tr>
                 <tr>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
+                    <td colspan="4"></td>
                 </tr>
                 <tr>
                     <td> 7</td>
