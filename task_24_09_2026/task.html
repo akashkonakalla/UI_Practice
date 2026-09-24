@@ -1,0 +1,212 @@
+<!-- Html-
+Design the above webpage using css styles -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <style>
+        .container {
+            width: 100%;
+            border-radius: 10px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(130, 130, 247);
+        }
+        
+
+        nav ol {
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: end;
+            gap: 1%;
+            border-radius: 10px;
+            
+        }
+
+        nav{
+           display: flex;
+           flex-direction: row;
+           justify-content: space-between;
+           align-items: center;
+           padding-right: 10px;
+           padding-left: 10px;
+        }
+
+        a{
+            text-decoration: none;
+             padding: 10px;
+             background-color: rgb(130, 130, 247);
+             color: white;
+             border-radius: 5px;
+           }
+
+        a:hover{
+            color: rgb(252, 252, 252);
+            background-color: rgb(109, 109, 241);
+            transform: scale(1.1);
+            border-radius: 5px;
+        }
+
+        ol li a{
+            padding: 10px;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        
+        }
+
+        .div1 img{
+            height: 200px;
+            width: 250px;
+            border-radius: 20px;
+            padding: 10px;
+        }
+
+        .div1{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(195, 235, 252);
+            margin-top: 10px;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        
+        .div2 {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            padding-top: 10px;
+         }
+         
+        .div2 > div {
+              flex: 1;
+        }
+       
+
+        .div2 div:nth-child(1){
+            padding: 10px ;
+            background-color: rgb(255, 183, 245);
+            justify-items: left;
+            border-radius: 10px;
+            
+        }
+        .div2 div:nth-child(2){
+            padding: 10px ;
+            background-color: rgb(191, 255, 189);
+            justify-items: left;
+            border-radius: 10px;
+        }
+        .div2 div:nth-child(3){
+            padding: 10px ;
+            background-color: rgb(255, 220, 160);
+            justify-items: left;
+            border-radius: 10px;
+        }
+
+         .div2 div:nth-child(1) a{
+            padding: 0px ;
+            color: rgb(223, 57, 84);
+            background-color: rgb(255, 183, 245);
+            font-weight: bold;
+            
+        }
+        .div2 div:nth-child(2) a{
+            padding: 0px ;
+            color: rgb(4, 173, 4);
+            background-color: rgb(191, 255, 189);
+            font-weight: bold;
+        }
+        .div2 div:nth-child(3) a{
+            padding: 0px ;
+            color: rgb(255, 158, 1);
+            background-color: rgb(255, 220, 160);
+            font-weight: bold;
+        }
+
+        .div2 img{
+            height: 60px;
+            width: 60px;
+        }
+        
+
+     </style>
+
+</head>
+<body>
+    <div class="container">
+        <nav>
+
+           
+            <div style="display: flex; flex-direction: row; align-items: center; gap: 10px;"> 
+                 <img src="./gojo pfp.jpg" style="border-radius:40px" alt="logo" width="50px" height="50px "> 
+                <h2>My Portfolio</h2>
+            </div>
+           
+            <div class="features">
+                <ol>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ol>
+            </div>
+        </nav>
+    </div>
+
+    <div>
+
+        <div class="div1">
+
+             <div>
+                <h1>Hello, I'm <strong>Akash Konakalla</strong></h1>
+                <p style="font-size: medium;"><b>A passionate learner and aspiring Full Stack Developer.</b></p>
+                <p>I love building simple and useful web applications.</p>
+                <a href="#">View My Projects →</a>
+             </div>
+
+             <div>
+
+                <img src="./2 doggs realistic.png"> </img>
+
+             </div>
+
+        </div>
+
+        <div class="div2">
+
+            <div>
+
+                <img src="./programing.png" alt="">
+                <h3>Web Development</h3>
+                <p>I work with HTML, CSS, JavaScript and modern frameworks to create responsive websites.</p>
+                <a href="#"> Learn More →</a>
+            </div>
+
+                <div>
+                    <img src="./backend.png" alt="">
+                    <h3>Backend Development</h3>
+                    <p>I built REST APIs and work with Java, Spring Boot and databases to create robust systems.</p>
+                    <a href="#"> Learn More →</a>
+
+            </div>
+
+
+            <div>
+                 <img src="solution.png" alt="">
+                <h3>Problem Solving</h3>
+                <p>I enjoy solving logical problems and learning new technologies every day.</p>
+                <a href="#"> Learn More →</a>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
