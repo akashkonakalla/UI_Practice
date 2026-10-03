@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #17345f;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.main-navbar {
+    background: linear-gradient(90deg, #243db7, #762bd1, #c833c7);
+    padding: 10px 0;
+}
+
+.navbar-brand {
+    color: white !important;
+}
+
+.navbar-nav {
+    gap: 25px;
+}
+
+.nav-link {
+    color: white !important;
+    padding: 8px 18px !important;
+    border-radius: 20px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.search-box {
+    max-width: 270px;
+}
+
+.search-btn {
+    background-color: #0879e9;
+    color: white;
+}
+
+
+/* ================= HERO ================= */
+
+.hero-section {
+    background: linear-gradient(
+        110deg,
+        #167fe9,
+        #5d48ed,
+        #d137c5
+    );
+
+    color: white;
+    padding: 40px 0;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 550px;
+}
+
+.hero-buttons {
+    margin-top: 20px;
+}
+
+.hero-buttons .btn {
+    padding: 10px 28px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.learn-btn {
+    color: white;
+    border: 2px solid white;
+}
+
+.learn-btn:hover {
+    background-color: white;
+    color: #5540df;
+}
+
+
+/* Hero laptop */
+
+.hero-image {
+    font-size: 170px;
+    color: #172b62;
+    text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+/* ================= SECTION HEADING ================= */
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-heading h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.section-heading p {
+    color: #62718a;
+}
+
+
+/* ================= SERVICES ================= */
+
+.services-section {
+    background-color: #f3f8fd;
+    padding: 20px 0 30px;
+}
+
+.service-card {
+    background-color: white;
+    border: 1px solid #e2e7ed;
+    border-radius: 6px;
+
+    padding: 15px;
+    min-height: 245px;
+
+    text-align: center;
+
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.12);
+}
+
+.service-icon {
+    width: 72px;
+    height: 72px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto 15px;
+
+    color: white;
+    font-size: 32px;
+}
+
+.blue {
+    background-color: #167be8;
+}
+
+.green {
+    background-color: #22b66b;
+}
+
+.purple {
+    background-color: #8136d6;
+}
+
+.orange {
+    background-color: #f2a515;
+}
+
+.service-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.service-card p {
+    color: #5e6c82;
+    font-size: 14px;
+    line-height: 1.5;
+    min-height: 65px;
+}
+
+.service-btn {
+    color: white;
+    border: none;
+    padding: 8px 28px;
+}
+
+.blue-btn {
+    background-color: #167be8;
+}
+
+.green-btn {
+    background-color: #22b66b;
+}
+
+.purple-btn {
+    background-color: #8136d6;
+}
+
+.orange-btn {
+    background-color: #f29416;
+}
+
+
+/* ================= TEAM ================= */
+
+.team-section {
+    background-color: #eaf4ff;
+    padding: 15px 0 30px;
+}
+
+.team-card {
+    background-color: white;
+    border: 1px solid #dfe6ee;
+    border-radius: 5px;
+
+    padding: 8px;
+
+    display: flex;
+    align-items: center;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.profile-image {
+    width: 75px;
+    height: 75px;
+
+    border-radius: 50%;
+
+    background-color: #ddd;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 40px;
+    color: #555;
+
+    flex-shrink: 0;
+}
+
+.team-info {
+    margin-left: 15px;
+}
+
+.team-info h4 {
+    font-size: 15px;
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+
+.team-info p {
+    margin-bottom: 8px;
+    font-size: 13px;
+    color: #6b778c;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    color: #126bc5;
+    font-size: 18px;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+    background: linear-gradient(
+        90deg,
+        #17386e,
+        #1b396c
+    );
+
+    color: white;
+    padding: 15px 0;
+}
+
+.footer h3 {
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+
+.footer p {
+    font-size: 11px;
+    margin-bottom: 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.footer-social a {
+    color: white;
+    font-size: 20px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 991px) {
+
+    .navbar-nav {
+        gap: 5px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .search-box {
+        max-width: 100%;
+    }
+
+    .hero-text {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .hero-text p {
+        margin: auto;
+    }
+
+    .hero-image {
+        font-size: 120px;
+    }
+
+    .footer-links {
+        margin: 20px 0;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .hero-buttons .btn {
+        margin-bottom: 10px;
+    }
+
+    .team-card {
+        max-width: 350px;
+        margin: auto;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+}
