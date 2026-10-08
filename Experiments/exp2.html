@@ -1,0 +1,180 @@
+[<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEO BURST | Anamorphic 4K Wallpaper</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  :root{--red:#ff1a1a;--dark:#050508;--muted:rgba(255,255,255,0.6)}
+  body{
+    font-family:'Segoe UI',system-ui,-apple-system,sans-serif;
+    background:var(--dark);
+    color:#fff;
+    line-height:1.6;
+    overflow-x:hidden;
+  }
+
+  /* NAV */
+  nav{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    display:flex;justify-content:space-between;align-items:center;
+    padding:18px 6vw;
+    background:rgba(5,5,8,0.7);
+    backdrop-filter:blur(16px);
+    border-bottom:1px solid rgba(255,255,255,0.08);
+  }
+  .logo{font-weight:900;letter-spacing:0.2em;font-size:14px}
+  .logo span{color:var(--red)}
+  .nav-links{display:flex;gap:32px;list-style:none;font-size:12px;letter-spacing:0.15em;opacity:0.8}
+  .nav-links a{color:#fff;text-decoration:none}
+  .nav-links a:hover{color:var(--red)}
+  .menu-btn{display:none;background:none;border:none;color:#fff;font-size:22px;cursor:pointer}
+
+  /* HERO */
+  .hero{
+    min-height:100vh;
+    display:grid;
+    grid-template-columns:1.1fr 0.9fr;
+    align-items:center;
+    padding:110px 6vw 60px;
+    background:
+      radial-gradient(600px 600px at 75% 50%, rgba(255,26,26,0.25), transparent 70%),
+      radial-gradient(800px 800px at 20% 80%, rgba(80,0,120,0.2), transparent),
+      var(--dark);
+  }
+  .hero-text h1{
+    font-size:clamp(36px, 5.5vw, 78px);
+    line-height:0.9;
+    font-weight:900;
+    text-transform:uppercase;
+    margin-bottom:20px;
+  }
+  .hero-text h1 em{font-style:normal;color:var(--red);display:block}
+  .hero-text p{color:var(--muted);max-width:460px;font-size:15px;margin-bottom:28px}
+  .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+  .btn{
+    padding:14px 26px;border-radius:6px;font-weight:700;font-size:13px;
+    letter-spacing:0.05em;border:none;cursor:pointer;transition:0.2s;
+  }
+  .btn-primary{background:var(--red);color:#fff;box-shadow:0 12px 32px rgba(255,26,26,0.35)}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 18px 40px rgba(255,26,26,0.5)}
+  .btn-ghost{background:rgba(255,255,255,0.08);color:#fff;border:1px solid rgba(255,255,255,0.15)}
+  .btn-ghost:hover{background:rgba(255,255,255,0.14)}
+
+  .hero-visual{
+    position:relative;
+    height:520px;
+    border-radius:20px;
+    background:linear-gradient(180deg,#12121a,#08080c);
+    border:1px solid rgba(255,255,255,0.08);
+    overflow:hidden;
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 40px 80px rgba(0,0,0,0.6);
+  }
+  .car-block{
+    width:82%;height:42%;
+    background:linear-gradient(180deg,#ff2a2a,#7a0000);
+    clip-path:polygon(12% 100%,8% 60%,22% 35%,38% 20%,68% 18%,88% 38%,92% 62%,86% 100%);
+    position:relative;
+    animation:float 3s ease-in-out infinite alternate;
+    box-shadow:inset 0 15px 25px rgba(255,255,255,0.5), 0 0 60px rgba(255,26,26,0.6);
+  }
+  @keyframes float{to{transform:scale(1.06) translateY(-8px)}}
+  .light{position:absolute;top:38%;width:20%;height:18%;background:#aef8ff;border-radius:3px;box-shadow:0 0 20px #5df,0 0 40px #fff}
+  .light.l{left:6%}.light.r{right:6%}
+  .tunnel-lines{
+    position:absolute;inset:0;
+    background:repeating-linear-gradient(90deg,transparent 0 110px,rgba(255,255,255,0.04) 110px 111px);
+    transform:perspective(600px) rotateX(20deg);
+  }
+
+  /* FEATURES */
+  .section{padding:70px 6vw}
+  .section-head{display:flex;justify-content:space-between;align-items:end;flex-wrap:wrap;gap:16px;margin-bottom:36px}
+  .section-head h2{font-size:clamp(24px,3vw,40px);text-transform:uppercase;line-height:0.95}
+  .section-head p{color:var(--muted);max-width:380px;font-size:14px}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+ .card{
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:14px;
+    padding:24px;
+  }
+  .card h3{font-size:13px;letter-spacing:0.15em;margin-bottom:8px;color:var(--red)}
+  .card p{font-size:13px;color:var(--muted)}
+
+  /* FOOTER */
+  footer{
+    padding:30px 6vw;border-top:1px solid rgba(255,255,255,0.08);
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;
+    font-size:11px;color:var(--muted);letter-spacing:0.1em;
+  }
+
+  /* RESPONSIVE */
+  @media(max-width:980px){
+    .hero{grid-template-columns:1fr;gap:32px}
+    .hero-visual{height:420px;order:-1}
+    .grid{grid-template-columns:repeat(2,1fr)}
+  }
+  @media(max-width:640px){
+    .nav-links{display:none}
+    .menu-btn{display:block}
+    .hero{padding-top:90px}
+    .hero-visual{height:320px}
+    .grid{grid-template-columns:1fr}
+    .section{padding:50px 6vw}
+    .hero-actions .btn{flex:1 1 100%;text-align:center}
+    .section-head{flex-direction:column;align-items:start}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo"><span>NEO</span> BURST</div>
+  <ul class="nav-links">
+    <li><a href="#">WALLPAPERS</a></li>
+    <li><a href="#">SPECS</a></li>
+    <li><a href="#">SUPPORT</a></li>
+  </ul>
+  <button class="menu-btn">☰</button>
+</nav>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>BREAK <em>OUT</em> OF THE SCREEN</h1>
+    <p>Anamorphic 4K live wallpaper built for gaming laptops. Ray-traced reflections, high-speed burst effect, and seamless 10s loop. No frame. No desk. Pure immersion.</p>
+    <div class="hero-actions">
+      <button class="btn btn-primary">DOWNLOAD 4K • 60FPS</button>
+      <button class="btn btn-ghost">WATCH PREVIEW</button>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="tunnel-lines"></div>
+    <div class="car-block">
+      <div class="light l"></div>
+      <div class="light r"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>BUILT FOR<br>GAMING RIGS</h2>
+    <p>Optimized for 16:9 and 16:10 displays. Low CPU, high impact. Works with Wallpaper Engine, Lively, and native Windows.</p>
+  </div>
+  <div class="grid">
+    <div class="card"><h3>RAY TRACING</h3><p>Realistic paint, glass shards and ground reflections with cinematic lighting.</p></div>
+    <div class="card"><h3>ANAMORPHIC 3D</h3><p>Front bumper and wheels extend beyond edges to create pop-out illusion.</p></div>
+    <div class="card"><h3>SEAMLESS LOOP</h3><p>10-second perfect loop at 4K 60FPS. No cuts, no flicker.</p></div>
+  </div>
+</section>
+
+<footer>
+  <div>© 2026 NEO BURST STUDIO</div>
+  <div>4K WALLPAPER • DESIGNED FOR OLED</div>
+</footer>
+
+</body>
+</html>
